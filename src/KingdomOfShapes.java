@@ -462,7 +462,7 @@ public class KingdomOfShapes extends Game {
 	
 	public void updateCenterStatements() {
 		if(!hasStarted){
-			center5.say(" Welcome to Kingdom of Shapes! Each level, each shape and color is exclusively given a value 0 to (#shapes+#colors)");
+			center5.say(" Welcome to Kingdom of Shapes! Each level, each shape and color is exclusively given a value 0 to (#shapes+#colors-1)");
 			center4.say(" The shapes fight when they collide and the shape with the lower shape+color value becomes an outline");
 			center3.say(" Think about what happens in a tie or when an already outlined shape hits a lower shape+color value");
 			center2.say(" Press r to reset the shapes (at the cost of 5 points) or reset and control 1 shape (at the cost of 10)");
