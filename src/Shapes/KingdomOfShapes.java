@@ -1,3 +1,4 @@
+package Shapes;
 import Shapes.*;
 
 import java.awt.Color;
@@ -6,7 +7,7 @@ import java.util.ArrayList;
 public class KingdomOfShapes extends Game {
 	
 	  public KingdomOfShapes() {
-		    super(false);
+		    super();
 		    setup();
 		    ready();
 		  }

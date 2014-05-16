@@ -2,12 +2,10 @@ package Shapes;
 
 import java.awt.*;
 import java.applet.*;
-import java.awt.geom.*;
-import java.*;
 import javax.swing.*;
+
 import java.util.*;
 import java.util.concurrent.*;
-import java.lang.*;
 
 /**
  * A game built using the Shapes framework.
@@ -27,7 +25,11 @@ import java.lang.*;
  * <code>Game.xx()</code>.)
  */
 public abstract class Game extends Applet {
-  private static JFrame frame;
+  /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+private static JFrame frame;
   private static Canvas canvas;
   private static boolean applet;
   private static Set<Shape> solidShapes;
@@ -82,8 +84,8 @@ public abstract class Game extends Applet {
    *            can be played online), and <code>false</code> otherwise. Note:
    *            this doesn't work yet.
    */
-  public Game(boolean web) {
-    this.applet = web;
+  public Game() {
+    Game.applet = false;
     canvas = new Canvas(this);
     solidShapes =
       Collections.newSetFromMap(new ConcurrentHashMap<Shape, Boolean>());
@@ -107,7 +109,7 @@ public abstract class Game extends Applet {
       frame.addMouseMotionListener(mouse);
       frame.addMouseListener(mouse);
       frame.addKeyListener(new Keyboard());
-      frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
+      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
     setDefaults();

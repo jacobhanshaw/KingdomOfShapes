@@ -1,3 +1,4 @@
+package Shapes;
 import Shapes.*;
 import java.awt.Color;
 
@@ -26,7 +27,7 @@ public class MyGame extends Game {
   }
 
   public MyGame() {
-    super(false);
+    super();
     setup();
     ready();
   }
