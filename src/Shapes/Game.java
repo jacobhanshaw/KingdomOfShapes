@@ -71,11 +71,11 @@ private static JFrame frame;
   /**
    * The height of the game window in pixels.
    */
-  public static final int HEIGHT = 1000;
+  public static final int HEIGHT = 800;
   /**
    * The width of the game window in pixels.
    */
-  public static final int WIDTH = 1600;
+  public static final int WIDTH = 1400;
   
   /**
    * Constructs a new game.
